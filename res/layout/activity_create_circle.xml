@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".CreateCircleActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择类型："
+                    android:textColor="#FFffffff"
+                    android:textSize="17dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/scrollView1"
+        android:textColor="#FFff00ff"
+        android:textSize="15dp"
+        android:text="情感" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:textColor="#FFffffff"
+        android:textSize="17dp"
+        android:text="上传圈图标：" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button5"
+        android:layout_below="@+id/textView2" 
+        android:text="上传" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button6"
+        android:layout_below="@+id/button6"
+        android:hint="请输入圈子名称，2-15字"
+       >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/et_name"
+        android:layout_below="@+id/et_name"
+        android:hint="请输入圈子介绍,0-50字"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/et_note"
+        android:layout_below="@+id/et_note"
+       	android:hint="请输入圈子中心地址"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btn_butmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/et_address"
+        android:layout_below="@+id/et_address"
+        android:textSize="15dp"
+        android:text="提交，并完成创建" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/scrollView1"
+        android:text="其他"
+        android:textColor="#FFff00ff"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/button5"
+        android:text="游戏"
+        android:textColor="#FFff00ff"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="校园"
+        android:textColor="#FFff00ff"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/button3"
+        android:text="娱乐"
+        android:textColor="#FFff00ff"
+        android:textSize="15dp" />
+
+</RelativeLayout>

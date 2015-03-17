@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <com.cn.ouan.xunchat.custom.CustomViewPager
+        android:id="@+id/vp_fragment_main"
+        android:layout_width="280dp" 
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"  >
+    </com.cn.ouan.xunchat.custom.CustomViewPager>
+
+    <ListView
+        android:id="@+id/lv_sliding_menu"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:layout_toLeftOf="@+id/vp_fragment_main" >
+
+    </ListView>
+
+</RelativeLayout>

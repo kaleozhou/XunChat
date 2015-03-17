@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cn.ouan.xunchat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:name="com.cn.ouan.xunchat.view.TApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <service android:name="com.cn.ouan.xunchat.service.BluetoothService" >
+        </service>
+        <service android:name="com.cn.ouan.xunchat.service.PushService" >
+        </service>
+        <service android:name="com.cn.ouan.xunchat.service.HeartbeatService" >
+        </service>
+
+        <activity
+            android:name="com.cn.ouan.xunchat.view.FragmentMainActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.HelpActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.SearchActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.ChatActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.LoginActivity"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.SelfFragment"
+            android:label="@string/title_activity_self"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.BaseActivity"
+            android:label="@string/title_activity_base"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.RegistActivity"
+            android:label="@string/title_activity_regist"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.CreateCircleActivity"
+            android:label="@string/title_activity_create_circle"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.UserInfoActivity"
+            android:label="@string/title_activity_user_info"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.CircleInfoActivity"
+            android:label="@string/title_activity_circle_info"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.FacilityFragment"
+            android:label="@string/title_activity_facility"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.SelfUpdateActivity"
+            android:label="@string/title_activity_self_update"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.CircleFriendFragment"
+            android:label="@string/title_activity_circle_friend" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.CircleFragment"
+            android:label="@string/title_activity_circle" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.GameFragment"
+            android:label="@string/title_activity_game_fragment" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.StoreFragment"
+            android:label="@string/title_activity_store_fragment" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.view.SelfDetailedInfoActivity"
+            android:label="@string/title_activity_self_detailed_info" >
+        </activity>
+        <activity
+            android:name="com.cn.ouan.xunchat.FindPasswordActivity"
+            android:label="@string/title_activity_find_password" 
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 阅读消息 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 写入消息 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- 接收消息 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" /> -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+</manifest>

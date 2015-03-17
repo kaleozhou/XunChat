@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeeeee"
+    tools:context=".RegistActivity" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="3dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/xian"
+                    android:padding="10dp"  >
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="登录帐号："
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_regist_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textColor="@color/black"
+                        android:background="@null"
+                        android:hint="3-15位，数字与字母组成且字符开头"
+                        android:textSize="15dp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/xian"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="昵称：        "
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_regist_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_weight="0.78"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="3-15位非字符"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/xian"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="密码：        "
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_regist_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:background="@null"
+                        android:textColor="@color/black"
+                        android:hint="6-15位密码"
+                        android:textSize="15dp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/xian"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_password1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="重复密码："
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_regist_password1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textColor="@color/black"
+                        android:background="@null"
+                        android:hint="重复6-15位密码"
+                        android:textSize="15dp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/xian"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_Teleph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机号："
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_Teleph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="11位手机号码"
+                        android:textColor="@color/black"
+                        android:background="@null"
+                        android:textSize="15dp" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/btn_get_Verification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:textSize="15dp"
+                        android:background="@anim/verify"
+                        android:textColor="@color/black"
+                        android:text="获取激活码" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/xian" 
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="激活码："
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textColor="@color/black"
+                        android:background="@null"
+                        android:hint="请输入获取的激活码"
+                        android:textSize="15dp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="3dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/silver"
+                        android:text="   我已阅读并接受《用户协议》" />
+                    
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="3dp" >
+
+                    <Button
+                        android:id="@+id/btn_regist_regist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@anim/verify"
+                        android:padding="5dp"
+                        android:textColor="@color/verify"
+                        android:textSize="20dp"
+                        android:text="注册" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

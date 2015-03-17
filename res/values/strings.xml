@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XunChat</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_self">SelfActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_create_circle">CreateCircleActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_circle_info">CircleInfoActivity</string>
+    <string name="title_activity_facility">FacilityActivity</string>
+
+    <!-- sliding menu all name -->
+    <string name="slid_menu_name_1">设备</string>
+    <string name="slid_menu_name_2">个人中心</string>
+    <string name="slid_menu_name_3">圈友</string>
+    <string name="slid_menu_name_4">圈子</string>
+    <string name="slid_menu_name_5">游戏</string>
+    <string name="slid_menu_name_6">商城</string>
+    <string name="slid_menu_name_7">帮助</string>
+    <string name="title_activity_self_update">SelfUpdateActivity</string>
+    <string name="title_activity_circle_friend">CircleFriendActivity</string>
+    <string name="title_activity_circle">CircleActivity</string>
+    <string name="title_activity_game_fragment">GameFragment</string>
+    <string name="title_activity_store_fragment">StoreFragment</string>
+    <string name="loading">加载中...</string>
+    <string name="hello">下拉可刷新 </string>
+    <string name="refresh_down_text">下拉可刷新</string>
+    <string name="refresh_release_text">松开可刷新</string>
+    <string name="toast_text">ScrollView下拉刷新完毕</string>
+    <string name="title_activity_self_detailed_info">SelfDetailedInfoActivity</string>
+    <string name="title_activity_find_password">FindPasswordActivity</string>
+
+</resources>
