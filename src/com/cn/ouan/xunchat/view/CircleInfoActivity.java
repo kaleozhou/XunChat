@@ -43,6 +43,11 @@ public class CircleInfoActivity extends Activity implements OnClickListener{
 		IntentFilter filter=new IntentFilter();
 		filter.addAction(Constants.ACTION_ADD_CIRCLE);
 		receiver=new AddCircleReceiver();
+		
+		
+		
+		
+		
 		registerReceiver(receiver, filter);
 	}
 	/**
